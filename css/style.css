@@ -1,0 +1,59 @@
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #EFEFEF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+}
+
+
+h1, h2, h3, h4
+{
+  line-height: 1.2;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+a:hover,
+a:focus {
+  color: #DE7171;
+  text-decoration: underline;
+}
+.button:hover {
+  opacity: 0.9; /* Reduces the opacity of the button to 90% */
+  color: #3C6EDE;
+    background-color: #ffffff;
+  text-decoration: none;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #3C6EDE;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 12px;
+  border-radius: 2px;
+  border-bottom: 2px solid #1E56D5; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
