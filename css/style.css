@@ -1,8 +1,42 @@
+/* Layout styling */
+#work h2, h3 {
+  text-align: center;
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  display: inline-block;
+  width: 100%
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li {
+  display: inline-block;
+  padding: 0 15px;
+}
 
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+.logo {
+  max-width: 200px;
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+.container {
+  padding: 0 15px;
+}
 img {
   width: 100%;
 }
-
 body {
   background-color: #EFEFEF;
   font-family: 'Montserrat', sans-serif;
@@ -35,25 +69,33 @@ h4 {
   font-size: 1.3em;
   font-weight: 400;
 }
-
+main {
+  padding-top: 180px;
+}
 header {
-  background-color: #ff44c4;
-  padding: 10px;
-  margin: 5px;
-padding-top: 15px;
-padding-right: 5px;
-padding-bottom: 15px;
-padding-left: 5px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.71);
+-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.71);
+box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.71);
+    text-align: center;
+      position: fixed;
+      width: 100%;
+    display: inline-block;
+  background-color: #ffe4c4;
+  padding: 5px;
+  margin: 0px;
 border-bottom: 3px solid #4a4a4a;
 }
-a{
 
+a{
+  color: #C31616;
+  text-decoration: underline;
 }
 a:hover
 a:focus {
   color: #DE7171;
   text-decoration: underline;
 }
+
 .button:hover {
   opacity: 0.9; /* Reduces the opacity of the button to 90% */
   color: #3C6EDE;
