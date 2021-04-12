@@ -1,5 +1,7 @@
 /*
 colors used:
+#361999 PURPLE background
+#78FFF1 link frames
 */
 
 * {
@@ -7,12 +9,12 @@ colors used:
 }
 
 body {
-  background-color: #EFEFEF;
+  background-color: #361999;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
+  color: #FFFFFF;
 }
 
 h1, h2, h3, h4
@@ -21,21 +23,21 @@ h1, h2, h3, h4
 }
 h1 {
   font-size: 2.75em;
-  font-weight: 700;
+  font-weight: 350;
 }
 
 h2 {
   font-size: 2.2em;
-  font-weight: 600;
+  font-weight: 325;
 }
 
 h3 {
   font-size: 1.6em;
-  font-weight: 500;
+  font-weight: 315;
 }
 h4 {
   font-size: 1.3em;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 img {
@@ -54,7 +56,7 @@ box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.71);
       position: fixed;
       width: 100%;
     display: inline-block;
-  background-color: #ffe4c4;
+  background-color: #361999;
   padding: 5px;
   margin: 0px;
 border-bottom: 3px solid #4a4a4a;
@@ -66,7 +68,7 @@ nav > ul > li > a:visited {
   width: 100%
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #78FFF1;
 }
 nav > ul > li {
   display: inline-block;
@@ -82,7 +84,7 @@ nav > ul {
   text-align: center;
 }
 #hero {
-  background-color: #ffe4c4;
+  background-color: #361999;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -126,18 +128,21 @@ a:focus {
 
 .button:hover {
   opacity: 0.9; /* Reduces the opacity of the button to 90% */
-  color: #3C6EDE;
+  color: #361999;
     background-color: #ffffff;
   text-decoration: none;
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #3C6EDE;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #361999;
+  color: #78FFF1; /* needed to override the default link color */
   font-weight: 400;
   padding: 12px;
   border-radius: 2px;
-  border-bottom: 2px solid #1E56D5; /* width of the border, type, color */
+  border-bottom: 1px solid #78FFF1; /* width of the border, type, color */
+  border-top: 1px solid #78FFF1;
+  border-left: 1px solid #78FFF1;
+  border-right: 1px solid #78FFF1;
   transition: 0.2s opacity;
 }
 .button {
@@ -146,4 +151,20 @@ a:focus {
 
 button {
 text-align: center;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
