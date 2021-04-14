@@ -11,7 +11,7 @@ colors used:
 body {
   background-color: #361999;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #FFFFFF;
@@ -79,7 +79,9 @@ nav > ul {
   list-style-type: none;
   padding: 0;
 }
-
+#contact {
+padding: 0 15px;
+}
 #work h2, h3 {
   text-align: center;
 }
@@ -88,8 +90,11 @@ nav > ul {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
-
+#hero span {
+  display: block;
+}
 }
 #hero h1 {
   text-align: center; /* Centers text */
@@ -149,7 +154,7 @@ a:focus {
   margin: 20px;
 }
 
-button {
+.centered-buttons {
 text-align: center;
 }
 
@@ -157,6 +162,16 @@ text-align: center;
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float:right;
+  margin-top: 4px;
+}
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -167,4 +182,9 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
