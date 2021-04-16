@@ -102,6 +102,11 @@ padding: 0 15px;
 .container {
   padding: 0 15px;
 }
+.container {
+  max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+}
 
 main {
   padding-top: 180px;
@@ -133,8 +138,8 @@ a:focus {
 
 .button:hover {
   opacity: 0.9; /* Reduces the opacity of the button to 90% */
-  color: #361999;
-    background-color: #ffffff;
+  color: #FFFFFF;
+    background-color: #361999;
   text-decoration: none;
 }
 .button {
@@ -149,9 +154,15 @@ a:focus {
   border-left: 1px solid #78FFF1;
   border-right: 1px solid #78FFF1;
   transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 .button {
   margin: 20px;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .centered-buttons {
@@ -172,6 +183,7 @@ nav {
   float:right;
   margin-top: 4px;
 }
+
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -208,4 +220,42 @@ Extra-large devices (1920px or larger)
 
 .col-7 {
   width: 58.33%;
+}
+
+/*animation*/
+
+.berlin-illustration {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
