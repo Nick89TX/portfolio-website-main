@@ -45,21 +45,49 @@ img {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 100px;
 }
 
 header {
   -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.71);
 -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.71);
 box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.71);
-    text-align: center;
       position: fixed;
       width: 100%;
     display: inline-block;
   background-color: #361999;
-  padding: 5px;
+  padding: 10px 0 4px;
   margin: 0px;
 border-bottom: 3px solid #4a4a4a;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 nav > ul > li > a:visited {
@@ -70,14 +98,15 @@ nav > ul > li > a:visited {
   font-weight: 700;
   color: #78FFF1;
 }
-nav > ul > li {
-  display: inline-block;
-  padding: 0 15px;
-}
+
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 #contact {
 padding: 0 15px;
@@ -110,7 +139,7 @@ margin-left: auto;
 margin-right: auto;
 }
 .main {
-padding-top: 190px;
+padding-top: 100px;
 }
 .social {
   text-align: center;
@@ -184,11 +213,29 @@ header {
   padding: 20px 0 13px;
 }
 
+nav > ul > li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
 nav {
   width: auto;
   float:right;
   margin-top: 4px;
 }
+
+.navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
 [class*="col-"] {
   float: left;
   padding: 10px;
