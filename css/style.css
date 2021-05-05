@@ -27,22 +27,22 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 2.75em;
-  font-weight: 350;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 2.2em;
-  font-weight: 325;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 1.6em;
-  font-weight: 315;
+  font-weight: 300;
 }
 
 h4 {
   font-size: 1.3em;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 /* imagery */
@@ -154,7 +154,8 @@ nav>ul {
 nav>ul>li>a:visited {
   padding: 0 15px;
   display: inline-block;
-  width: 100% text-transform: uppercase;
+  width: 100%;
+  text-transform: uppercase;
   font-weight: 700;
   color: #78FFF1;
 }
